@@ -198,7 +198,7 @@ def legal_case_search(user_query: str) -> Tuple[str, str, str, str]:
 
     time.sleep(1)
     search_results = search_supreme_court_cases(keywords)
-    search_info = f"検索件数: {len(search_results)}件"
+    search_info = f"検索件数: {len(search_results)}件、ここから最高裁判例を抽出するため減ります。"
 
     time.sleep(1)
     formatted_results = format_case_results(search_results, user_query)
