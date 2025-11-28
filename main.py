@@ -268,7 +268,7 @@ def legal_case_search(user_query: str) -> Tuple[str, str, str, str]:
     search_results = search_supreme_court_cases(keywords)
 
     # 検索結果が0件でもエラー扱いせず0件として返す
-    search_count_info = f"検索件数: {len(search_results)}件 \n ここからOPENAIに入れて最高裁判例を抽出するため減ります。"
+    search_count_info = f"検索件数: {len(search_results)}件　※ここからOPENAIに入れて最高裁判例を抽出するため減ります。"
 
     time.sleep(1)  # API制限回避
 
